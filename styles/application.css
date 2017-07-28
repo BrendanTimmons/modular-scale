@@ -1,0 +1,35 @@
+@import "https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway";
+h1, h2, h3, h4 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: normal; }
+
+h1 {
+  font-size: 6.8541em;
+  line-height: 1em;
+  margin-bottom: 1em; }
+
+h2 {
+  font-size: 4.23607em;
+  line-height: 1em;
+  margin-bottom: 1em; }
+
+h3 {
+  font-size: 2.61803em;
+  line-height: 1em;
+  margin-bottom: 1em; }
+
+h4 {
+  font-size: 1.61803em;
+  line-height: 1em;
+  margin-bottom: 1em; }
+
+body {
+  font-size: 1em;
+  font-family: Raleway, sans-serif;
+  line-height: 1em; }
+
+.content {
+  margin-left: 50px;
+  max-width: 800px; }
+
+/*# sourceMappingURL=application.css.map */

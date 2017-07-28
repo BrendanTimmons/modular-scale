@@ -1,0 +1,34 @@
+$modularscale: (
+  base: 1em,
+  ratio: $golden
+);
+
+h1,h2,h3,h4{
+  font-family: "Abril Fatface", cursive;
+  font-weight: normal;
+}
+h1{
+  font-size: ms(4);
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+h2{
+  font-size: ms(3);
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+h3{
+  font-size: ms(2);
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+h4{
+  font-size: ms(1);
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+body{
+  font-size: ms(0);
+  font-family: Raleway, sans-serif;
+  line-height: 1em;
+}
