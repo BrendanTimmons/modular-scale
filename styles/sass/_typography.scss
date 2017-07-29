@@ -1,6 +1,6 @@
 $modularscale: (
-  base: 1em,
-  ratio: $golden
+  base: 1.125em,
+  ratio: $augmented-fourth
 );
 
 $red     : #f2777a; 
@@ -14,12 +14,13 @@ $brown   : #d27b53;
 
 $abril   : "Abril Fatface", Cursive;
 $raleway : "Raleway", Sans-serif;
+$lora : "Lora", Serif;
 
 // BASE STYLES
 
 body{
   font-size: ms(0);
-  font-family: $raleway;
+  font-family: $lora;
   line-height: 1.4;
 }
 
@@ -38,11 +39,6 @@ h4{font-size: ms(1);}
 
 // OTHER
 
-blockquote{
-  font-family: $abril;
-  font-size: ms(1);
-  line-height: 1.4em;
-}
 a{
   color: black;
   text-decoration: none;
@@ -50,97 +46,3 @@ a{
 
 
 
-// BESPOKE STYLES
-
-
-article{
-  h1,h2,h3,h4{
-    margin: 1.618em 0 0.5em;
-  }
-  h1{
-    margin: 1em 0;
-    position: relative;
-
-    &:before, &:after{
-      content:"";
-      display: block;
-      opacity: 0.5;
-      position: absolute;
-      z-index: -1;
-    }
-    &:before{
-      background: $yellow;
-      height: 33%;
-      left: -5%;
-      top: 32%;
-      width: 60%;
-    }
-    &:after{
-      background: $aqua;
-      height: 110%;
-      right: 20%;
-      top: 11%;
-      width: 8%;
-    }
-  }
-  h2{margin: 1em 0 0.5em;}
-  h3{margin: 1em 0 0.5em;}
-  h4{margin: 1.2em 0 0.6em;}
-  blockquote{
-    border-left: 0.25em solid $yellow;
-    padding: 0.5em 1em;
-    margin: 2em 1em;
-  }
-  a{
-    padding: 0.1em 0.5em;
-    position: relative;
-
-    &:after{
-      background-color: $yellow;
-      bottom: 0;
-      content: "";
-      display: block;
-      left: 0;
-      position: absolute;
-      right: 0;
-      transition: 0.3s left ease-in-out;
-      top: 0;
-      z-index: -1;
-    }
-    &:before{
-      background: #000;
-      bottom: 0.2em;
-      content: "";
-      display: block;
-      height: 1px;
-      left: 0.5em;
-      right: auto;
-      transition: 0.3s width ease-in-out;
-      position: absolute;
-      width: 0;
-      z-index: -1;
-    }
-    &:hover{
-      &:after{left: 100%;}
-      &:before{
-        width: calc(100% - 1em);
-        transition-delay: 0.2s;
-      }
-    }
-  }
-  p{
-    margin: 1.3em 0;
-
-    &:nth-of-type(1){
-      font-size: ms(1);
-
-      &:first-letter{
-        float: left;
-        font-family: $abril;
-        font-size: ms(3);
-        line-height: 0.8em;
-        padding: 0.0533em 0.1em 0 0.04em;
-      }
-    }
-  }
-}

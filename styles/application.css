@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import "https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway";
+@import "https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway|Lora";
 html {
   line-height: 1.15;
   /* 1 */
@@ -391,8 +391,8 @@ template {
   display: none; }
 
 body {
-  font-size: 1em;
-  font-family: "Raleway", Sans-serif;
+  font-size: 1.125em;
+  font-family: "Lora", Serif;
   line-height: 1.4; }
 
 h1, h2, h3, h4 {
@@ -402,100 +402,20 @@ h1, h2, h3, h4 {
   line-height: 1.2em; }
 
 h1 {
-  font-size: 6.8541em; }
+  font-size: 4.49995em; }
 
 h2 {
-  font-size: 4.23607em; }
+  font-size: 3.18196em; }
 
 h3 {
-  font-size: 2.61803em; }
+  font-size: 2.24999em; }
 
 h4 {
-  font-size: 1.61803em; }
-
-blockquote {
-  font-family: "Abril Fatface", Cursive;
-  font-size: 1.61803em;
-  line-height: 1.4em; }
+  font-size: 1.59099em; }
 
 a {
   color: black;
   text-decoration: none; }
-
-article h1, article h2, article h3, article h4 {
-  margin: 1.618em 0 0.5em; }
-article h1 {
-  margin: 1em 0;
-  position: relative; }
-  article h1:before, article h1:after {
-    content: "";
-    display: block;
-    opacity: 0.5;
-    position: absolute;
-    z-index: -1; }
-  article h1:before {
-    background: #ffcc66;
-    height: 33%;
-    left: -5%;
-    top: 32%;
-    width: 60%; }
-  article h1:after {
-    background: #66cccc;
-    height: 110%;
-    right: 20%;
-    top: 11%;
-    width: 8%; }
-article h2 {
-  margin: 1em 0 0.5em; }
-article h3 {
-  margin: 1em 0 0.5em; }
-article h4 {
-  margin: 1.2em 0 0.6em; }
-article blockquote {
-  border-left: 0.25em solid #ffcc66;
-  padding: 0.5em 1em;
-  margin: 2em 1em; }
-article a {
-  padding: 0.1em 0.5em;
-  position: relative; }
-  article a:after {
-    background-color: #ffcc66;
-    bottom: 0;
-    content: "";
-    display: block;
-    left: 0;
-    position: absolute;
-    right: 0;
-    transition: 0.3s left ease-in-out;
-    top: 0;
-    z-index: -1; }
-  article a:before {
-    background: #000;
-    bottom: 0.2em;
-    content: "";
-    display: block;
-    height: 1px;
-    left: 0.5em;
-    right: auto;
-    transition: 0.3s width ease-in-out;
-    position: absolute;
-    width: 0;
-    z-index: -1; }
-  article a:hover:after {
-    left: 100%; }
-  article a:hover:before {
-    width: calc(100% - 1em);
-    transition-delay: 0.2s; }
-article p {
-  margin: 1.3em 0; }
-  article p:nth-of-type(1) {
-    font-size: 1.61803em; }
-    article p:nth-of-type(1):first-letter {
-      float: left;
-      font-family: "Abril Fatface", Cursive;
-      font-size: 4.23607em;
-      line-height: 0.8em;
-      padding: 0.0533em 0.1em 0 0.04em; }
 
 body {
   border-left: 15px solid black; }
@@ -503,5 +423,65 @@ body {
 article {
   padding: 1px 0 1px 80px;
   max-width: 800px; }
+  article h1, article h2, article h3, article h4 {
+    margin: 1.618em 0 0.5em; }
+  article h1 {
+    margin: 1em 0; }
+  article h2 {
+    margin: 1em 0 0.5em; }
+  article h3 {
+    margin: 1em 0 0.5em; }
+  article h4 {
+    margin: 1.2em 0 0.6em; }
+  article p {
+    margin: 1.3em 0; }
+  article a {
+    padding: 0.1em 0.5em;
+    position: relative; }
+    article a:after {
+      background-color: #ffcc66;
+      bottom: 0;
+      content: "";
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      transition: 0.3s left ease-in-out;
+      top: 0;
+      z-index: -1; }
+    article a:before {
+      background: #000;
+      bottom: 0.2em;
+      content: "";
+      display: block;
+      height: 1px;
+      left: 0.5em;
+      right: auto;
+      transition: 0.3s width ease-in-out;
+      position: absolute;
+      width: 0;
+      z-index: -1; }
+    article a:hover:after {
+      left: 100%; }
+    article a:hover:before {
+      width: calc(100% - 1em);
+      transition-delay: 0.2s; }
+
+blockquote {
+  border-left: 0.25em solid #ffcc66;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  width: 80%; }
+
+.quote {
+  font-family: "Abril Fatface", Cursive;
+  font-size: 1.59099em;
+  line-height: 1.4em; }
+
+cite {
+  display: block;
+  font-size: 0.7955em;
+  font-family: "Lora", Serif;
+  margin-top: 1.125em; }
 
 /*# sourceMappingURL=application.css.map */
