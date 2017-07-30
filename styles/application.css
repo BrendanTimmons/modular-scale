@@ -392,25 +392,25 @@ template {
 
 body {
   font-family: "Alegreya", Serif;
-  line-height: 1.41421em; }
+  line-height: 1.5026em; }
 
 h1, h2, h3, h4 {
   font-family: "Abril Fatface", Cursive;
   font-weight: normal;
   letter-spacing: 0.01em;
-  line-height: 1.25em; }
+  line-height: 1.0625em; }
 
 h1 {
-  font-size: 7.07098em; }
+  font-size: 5.49994em; }
 
 h2 {
-  font-size: 3.53551em; }
+  font-size: 3.88906em; }
 
 h3 {
-  font-size: 2.49999em; }
+  font-size: 2.74999em; }
 
 h4 {
-  font-size: 1.76776em; }
+  font-size: 1.94454em; }
 
 a {
   color: black;
@@ -418,7 +418,7 @@ a {
 
 body {
   background: #fbfbfb;
-  border-left: 1.76776em solid black; }
+  border-left: 1.94454em solid black; }
 
 ::selection {
   background: #ffcc66; }
@@ -431,25 +431,25 @@ article header {
   flex-direction: column;
   height: 100vh;
   justify-content: flex-end;
-  padding: 1px 0 4.99995em 4.99995em;
+  padding: 1px 0 5.49994em 5.49994em;
   position: relative; }
   article header h1 {
-    margin: 1.25em 0 0.44195em; }
+    margin: 1.375em 0 0.48614em; }
   article header .byline {
-    font-size: 1em; }
+    font-size: 1.0625em; }
 
 .byline {
   font-style: italic; }
 
 article .content {
   box-sizing: border-box;
-  max-width: 39.99899em;
-  margin: 4.99995em 0 0 4.99995em;
+  max-width: 33.99914em;
+  margin: 5.49994em 0 0 5.49994em;
   padding-bottom: 1px; }
   article .content h2, article .content h3, article .content h4 {
-    margin: 1.25em 0 0.44195em; }
+    margin: 1.375em 0 0.6875em; }
   article .content p {
-    margin: 1.25em 0; }
+    margin: 1.375em 0; }
   article .content a {
     padding: 0.1em 0.5em;
     position: relative; }
@@ -483,47 +483,47 @@ article .content {
       transition-delay: 0.2s; }
   article .content img.left {
     float: left;
-    margin: 0 1.25em 1em 0; }
+    margin: 0 1.375em 1.0625em 0; }
   article .content img.right {
     float: right;
-    margin: 0 0 1em 1.25em; }
+    margin: 0 0 1.0625em 1.375em; }
 
 blockquote {
   border-left: 0.25em solid #ffcc66;
-  margin: 2.49999em 0;
-  padding: 1.25em;
+  margin: 2.74999em 0;
+  padding: 1.375em;
   font-style: italic; }
 
 .quote {
-  font-size: 1.41421em;
-  line-height: 1.25em; }
+  font-size: 1.5026em;
+  line-height: 1.375em; }
 
 cite {
   display: block;
-  font-size: 1em;
-  margin-top: 1.25em; }
+  font-size: 1.0625em;
+  margin-top: 1.375em; }
 
 .compare-scale {
   display: flex;
   justify-content: center;
-  margin: 2.49999em; }
+  margin: 2.74999em; }
 
 .compare-scale__item {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0 0.88389em 27px 0;
+  padding: 0 0.97227em 27px 0;
   border-top: 1px solid #000; }
 
 .compare-scale__size {
   color: #f2777a;
-  font-size: 0.70711em;
-  padding: 1em 0;
+  font-size: 0.7513em;
+  padding: 1.0625em 0;
   position: relative; }
   .compare-scale__size:before {
     border-left: 1px solid #000;
     content: "";
-    height: 1em;
+    height: 1.0625em;
     left: 50%;
     position: absolute;
     top: 0; }
@@ -538,11 +538,11 @@ cite {
 .select-type__item {
   display: flex;
   align-items: center;
-  margin-bottom: 0.3125em; }
+  margin-bottom: 0.34375em; }
 
 .select-type__size {
-  font-size: 0.70711em;
-  margin-right: 1.41421em;
+  font-size: 0.7513em;
+  margin-right: 1.5026em;
   color: #f2777a; }
 
 .select-type__text {
