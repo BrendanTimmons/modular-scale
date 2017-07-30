@@ -1,14 +1,38 @@
-// BESPOKE STYLES
+// ARTICLE STYLES
 
-article{
-  padding: 1px 0 1px 80px;
-  max-width: 800px;
 
-  h1,h2,h3,h4{margin: 1.618em 0 0.5em;}
-  h1{margin: 1em 0;}
-  h2{margin: 1em 0 0.5em;}
-  h3{margin: 1em 0 0.5em;}
-  h4{margin: 1.2em 0 0.6em;}
+
+// HEADER
+
+article header{
+  align-items: flex-start;
+  background: $yellow;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-end;
+  padding: 1px 0 ms(8) ms(8);
+  position: relative;
+
+  h1{
+    margin: 1em 0 0.3em;
+    max-width: 800px;
+  }
+}
+.byline{font-style: italic;}
+
+
+
+// CONTENT
+
+article .content{
+  box-sizing: border-box;
+  max-width: ms(20);
+  margin: ms(8) 0 0 ms(8);
+  padding-bottom: 1px;
+
+  h2,h3,h4{margin: 1em 0;}
   p{margin: 1.3em 0;}
 
   a{

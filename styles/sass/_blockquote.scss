@@ -1,8 +1,8 @@
 blockquote{
   border-left: 0.25em solid $yellow;
-  padding: 0.5em 1em;
+  font-size: ms(-1);
   margin: 2em 0;
-  width: 80%;
+  padding: 0.5em 1em;
 }
 .quote{
   font-family: $abril;
@@ -11,7 +11,7 @@ blockquote{
 }
 cite{
   display: block;
-  font-size: ms(-1);
+  font-size: ms(-2);
   font-family: $lora;
   margin-top: ms(0);
 }

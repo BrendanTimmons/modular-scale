@@ -1,0 +1,9 @@
+.select-type{
+  display: flex;
+  flex-direction: column;
+}
+.select-type__size{
+  font-size: ms(-4);
+  margin-right: 2em;
+  color: $red;
+}

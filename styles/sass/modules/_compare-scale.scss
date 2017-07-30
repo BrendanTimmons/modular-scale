@@ -1,0 +1,28 @@
+.compare-scale{
+  display: flex;
+  justify-content: center;
+}
+.compare-scale__item{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5em 2em 0;
+  border-top: 1px solid #000;
+}
+.compare-scale__size{
+  font-size: ms(-4);
+  padding: 1em 0;
+  position: relative;
+
+  &:before{
+    border-left: 1px solid #000;
+    content: "";
+    height: 1em;
+    left: 50%;
+    position: absolute;
+    top: 0;
+  }
+}
+.compare-scale__text{
+  line-height: 0.33em;
+}
