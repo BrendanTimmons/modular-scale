@@ -417,8 +417,11 @@ a {
   text-decoration: none; }
 
 body {
-  background: #fafafa;
+  background: #fbfbfb;
   border-left: 1.5026em solid black; }
+
+::selection {
+  background: #ffcc66; }
 
 article header {
   align-items: flex-start;
@@ -444,7 +447,7 @@ article .content {
   margin: 4.24996em 0 0 4.24996em;
   padding-bottom: 1px; }
   article .content h2, article .content h3, article .content h4 {
-    margin: 1.0625em 0 0.7513em; }
+    margin: 1.5026em 0 0.7513em; }
   article .content p {
     margin: 1.0625em 0; }
   article .content a {
@@ -478,11 +481,17 @@ article .content {
     article .content a:hover:before {
       width: calc(100% - 1em);
       transition-delay: 0.2s; }
+  article .content img.left {
+    float: left;
+    margin: 0 1.0625em 1.0625em 0; }
+  article .content img.right {
+    float: right;
+    margin: 0 0 1.0625em 1.0625em; }
 
 blockquote {
   border-left: 0.25em solid #ffcc66;
   margin: 2.12499em 0;
-  padding: 0.5em 1em;
+  padding: 1.0625em;
   font-style: italic; }
 
 .quote {
@@ -496,7 +505,8 @@ cite {
 
 .compare-scale {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 2.12499em; }
 
 .compare-scale__item {
   align-items: center;

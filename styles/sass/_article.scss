@@ -30,7 +30,7 @@ article .content{
   margin: ms(8) 0 0 ms(8);
   padding-bottom: 1px;
 
-  h2,h3,h4{margin: ms(0) 0 ms(-2);}
+  h2,h3,h4{margin: ms(2) 0 ms(-2);}
   p{margin: ms(0) 0;}
 
   a{
@@ -70,4 +70,16 @@ article .content{
       }
     }
   }
+  img.left{
+    float: left;
+    margin: 0 ms(0) ms(0) 0;
+  }
+  img.right{
+    float: right;
+    margin: 0 0 ms(0) ms(0);
+  }
 }
+
+
+
+

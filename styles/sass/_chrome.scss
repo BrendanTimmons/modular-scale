@@ -1,4 +1,7 @@
 body{
-  background: #fafafa;
+  background: #fbfbfb;
   border-left: ms(2) solid black;
+}
+::selection{
+  background: $yellow;
 }
