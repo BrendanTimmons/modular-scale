@@ -7,18 +7,18 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0 0.5em 27px 0;
+  padding: 0 ms(-2) 27px 0;
   border-top: 1px solid #000;
 }
 .compare-scale__size{
-  font-size: ms(-4);
-  padding: 1em 0;
+  font-size: ms(-3);
+  padding: ms(-1) 0;
   position: relative;
 
   &:before{
     border-left: 1px solid #000;
     content: "";
-    height: 1em;
+    height: ms(-1);
     left: 50%;
     position: absolute;
     top: 0;
