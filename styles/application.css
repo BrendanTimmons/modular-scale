@@ -391,34 +391,34 @@ template {
   display: none; }
 
 body {
-  font-size: 1.125em;
-  font-family: "Lora", Serif;
-  line-height: 1.41421em; }
+  font-family: "Spectral", Serif;
+  line-height: 1.5026em; }
 
 h1, h2, h3, h4 {
   font-family: "Abril Fatface", Cursive;
   font-weight: normal;
   letter-spacing: 0.01em;
-  line-height: 1.125em; }
+  line-height: 1.0625em; }
 
 h1 {
-  font-size: 6.36388em; }
+  font-size: 6.01033em; }
 
 h2 {
-  font-size: 3.18196em; }
+  font-size: 3.00518em; }
 
 h3 {
-  font-size: 2.24999em; }
+  font-size: 2.12499em; }
 
 h4 {
-  font-size: 1.59099em; }
+  font-size: 1.5026em; }
 
 a {
   color: black;
   text-decoration: none; }
 
 body {
-  border-left: 15px solid black; }
+  background: #fafafa;
+  border-left: 1.5026em solid black; }
 
 article header {
   align-items: flex-start;
@@ -428,24 +428,25 @@ article header {
   flex-direction: column;
   height: 100vh;
   justify-content: flex-end;
-  padding: 1px 0 4.49995em 4.49995em;
+  padding: 1px 0 4.24996em 4.24996em;
   position: relative; }
   article header h1 {
-    margin: 1em 0 0.3em;
-    max-width: 800px; }
+    margin: 1.0625em 0 0.37565em; }
+  article header .byline {
+    font-size: 0.8754em; }
 
 .byline {
   font-style: italic; }
 
 article .content {
   box-sizing: border-box;
-  max-width: 35.99909em;
-  margin: 4.49995em 0 0 4.49995em;
+  max-width: 39.615em;
+  margin: 4.24996em 0 0 4.24996em;
   padding-bottom: 1px; }
   article .content h2, article .content h3, article .content h4 {
-    margin: 1.125em 0 0.7955em; }
+    margin: 1.0625em 0 0.7513em; }
   article .content p {
-    margin: 1.3em 0; }
+    margin: 1.0625em 0; }
   article .content a {
     padding: 0.1em 0.5em;
     position: relative; }
@@ -480,20 +481,18 @@ article .content {
 
 blockquote {
   border-left: 0.25em solid #ffcc66;
-  font-size: 1em;
-  margin: 2.24999em 0;
-  padding: 0.5em 1em; }
+  margin: 2.12499em 0;
+  padding: 0.5em 1em;
+  font-style: italic; }
 
 .quote {
-  font-family: "Abril Fatface", Cursive;
-  font-size: 1.41421em;
-  line-height: 1.4em; }
+  font-size: 1.5026em;
+  line-height: 1.0625em; }
 
 cite {
   display: block;
-  font-size: 0.7955em;
-  font-family: "Lora", Serif;
-  margin-top: 1.125em; }
+  font-size: 0.7513em;
+  margin-top: 1.0625em; }
 
 .compare-scale {
   display: flex;
@@ -503,11 +502,11 @@ cite {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0 0.5em 2em 0;
+  padding: 0 0.5em 27px 0;
   border-top: 1px solid #000; }
 
 .compare-scale__size {
-  font-size: 0.5625em;
+  font-size: 0.53125em;
   padding: 1em 0;
   position: relative; }
   .compare-scale__size:before {
@@ -526,7 +525,7 @@ cite {
   flex-direction: column; }
 
 .select-type__size {
-  font-size: 0.5625em;
+  font-size: 0.53125em;
   margin-right: 2em;
   color: #f2777a; }
 

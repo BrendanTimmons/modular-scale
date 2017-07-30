@@ -1,5 +1,5 @@
 $modularscale: (
-  base: 1.125em 1em,
+  base: 1.0625em 1.238em,
   ratio: $augmented-fourth
 );
 
@@ -12,16 +12,14 @@ $blue    : #6699cc;
 $purple  : #cc99cc; 
 $brown   : #d27b53; 
 
-$abril   : "Abril Fatface", Cursive;
-$raleway : "Raleway", Sans-serif;
-$lora : "Lora", Serif;
+$abril     : "Abril Fatface", Cursive;
+$spectral  : "Spectral", Serif;
 
 // BASE STYLES
 
 body{
-  font-size: ms(0);
-  font-family: $lora;
-  line-height: ms(1);
+  font-family: $spectral;
+  line-height: ms(2);
 }
 
 // HEADINGS

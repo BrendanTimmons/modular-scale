@@ -15,10 +15,8 @@ article header{
   padding: 1px 0 ms(8) ms(8);
   position: relative;
 
-  h1{
-    margin: 1em 0 0.3em;
-    max-width: 800px;
-  }
+  h1{ margin: ms(0) 0 ms(-6); }
+  .byline{font-size: ms(-1);}
 }
 .byline{font-style: italic;}
 
@@ -28,12 +26,12 @@ article header{
 
 article .content{
   box-sizing: border-box;
-  max-width: ms(20);
+  max-width: ms(21);
   margin: ms(8) 0 0 ms(8);
   padding-bottom: 1px;
 
   h2,h3,h4{margin: ms(0) 0 ms(-2);}
-  p{margin: 1.3em 0;}
+  p{margin: ms(0) 0;}
 
   a{
     padding: 0.1em 0.5em;

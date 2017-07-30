@@ -1,17 +1,15 @@
 blockquote{
   border-left: 0.25em solid $yellow;
-  font-size: ms(-1);
   margin: ms(4) 0;
   padding: 0.5em 1em;
+  font-style: italic;
 }
 .quote{
-  font-family: $abril;
-  font-size: ms(1);
-  line-height: 1.4em;
+  font-size: ms(2);
+  line-height: ms(0);
 }
 cite{
   display: block;
   font-size: ms(-2);
-  font-family: $lora;
   margin-top: ms(0);
 }
