@@ -1,10 +1,11 @@
 blockquote{
-  border-left: 0.25em solid $yellow;
+  border-left: ms(-6) solid $yellow;
   margin: ms(4) 0;
   padding: ms(0);
   font-style: italic;
 }
 .quote{
+  display: block;
   font-size: ms(1);
   line-height: ms(0);
 }

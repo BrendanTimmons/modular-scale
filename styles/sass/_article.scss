@@ -31,22 +31,26 @@ article .content{
   padding-bottom: 1px;
 
   h2,h3,h4{margin: ms(0) 0 ms(-4);}
-  p{margin: ms(0) 0;}
+  p{
+    font-size: ms(0);
+    line-height: ms(0);
+    margin: ms(0) 0;
+  }
 
   a{
-    padding: 0.1em 0.5em;
+    padding: 0 ms(-5);
     position: relative;
 
     &:after{
       background-color: $yellow;
-      bottom: 0;
+      bottom: ms(-19);
       content: "";
       display: block;
       left: 0;
       position: absolute;
       right: 0;
       transition: 0.3s left ease-in-out;
-      top: 0;
+      top: ms(-12);
       z-index: -1;
     }
     &:before{
