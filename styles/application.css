@@ -443,7 +443,7 @@ article .content {
   margin: 4.49995em 0 0 4.49995em;
   padding-bottom: 1px; }
   article .content h2, article .content h3, article .content h4 {
-    margin: 1em 0; }
+    margin: 1.125em 0 0.7955em; }
   article .content p {
     margin: 1.3em 0; }
   article .content a {
@@ -481,7 +481,7 @@ article .content {
 blockquote {
   border-left: 0.25em solid #ffcc66;
   font-size: 1em;
-  margin: 2em 0;
+  margin: 2.24999em 0;
   padding: 0.5em 1em; }
 
 .quote {
