@@ -447,7 +447,7 @@ article .content {
   margin: 4.99995em 0 0 4.99995em;
   padding-bottom: 1px; }
   article .content h2, article .content h3, article .content h4 {
-    margin: 1.76776em 0 0.88389em; }
+    margin: 1.25em 0 0.44195em; }
   article .content p {
     margin: 1.25em 0; }
   article .content a {
@@ -495,7 +495,7 @@ blockquote {
   font-style: italic; }
 
 .quote {
-  font-size: 1.76776em;
+  font-size: 1.41421em;
   line-height: 1.25em; }
 
 cite {
@@ -516,6 +516,7 @@ cite {
   border-top: 1px solid #000; }
 
 .compare-scale__size {
+  color: #f2777a;
   font-size: 0.70711em;
   padding: 1em 0;
   position: relative; }
@@ -534,9 +535,17 @@ cite {
   display: flex;
   flex-direction: column; }
 
+.select-type__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3125em; }
+
 .select-type__size {
-  font-size: 0.625em;
-  margin-right: 2em;
+  font-size: 0.70711em;
+  margin-right: 1.41421em;
   color: #f2777a; }
+
+.select-type__text {
+  line-height: 1em; }
 
 /*# sourceMappingURL=application.css.map */

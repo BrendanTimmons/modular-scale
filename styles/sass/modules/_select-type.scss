@@ -2,8 +2,16 @@
   display: flex;
   flex-direction: column;
 }
+.select-type__item{
+  display: flex;
+  align-items: center;
+  margin-bottom: ms(-8);
+}
 .select-type__size{
-  font-size: ms(-4);
-  margin-right: 2em;
+  font-size: ms(-3);
+  margin-right: ms(1);
   color: $red;
+}
+.select-type__text{
+  line-height: 1em;
 }
