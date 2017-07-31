@@ -406,40 +406,40 @@ h1, h2, h3, h4 {
       line-height: 1.25em; } }
 
 h1 {
-  font-size: 1.80203em; }
+  font-size: 2.00226em; }
   @media (min-width: 20em) and (max-width: 60em) {
     h1 {
-      font-size: calc( 1.80203em + 3.85475 * ( ( 100vw - 20em) / 40 ) ); } }
+      font-size: calc( 2.00226em + 5.06872 * ( ( 100vw - 20em) / 40 ) ); } }
   @media (min-width: 60em) {
     h1 {
-      font-size: 5.65678em; } }
+      font-size: 7.07098em; } }
 
 h2 {
-  font-size: 1.42383em; }
+  font-size: 1.58203em; }
   @media (min-width: 20em) and (max-width: 60em) {
     h2 {
-      font-size: calc( 1.42383em + 1.40458 * ( ( 100vw - 20em) / 40 ) ); } }
+      font-size: calc( 1.58203em + 1.95348 * ( ( 100vw - 20em) / 40 ) ); } }
   @media (min-width: 60em) {
     h2 {
-      font-size: 2.82841em; } }
+      font-size: 3.53551em; } }
 
 h3 {
-  font-size: 1.26563em; }
+  font-size: 1.40625em; }
   @media (min-width: 20em) and (max-width: 60em) {
     h3 {
-      font-size: calc( 1.26563em + 0.73436 * ( ( 100vw - 20em) / 40 ) ); } }
+      font-size: calc( 1.40625em + 1.09374 * ( ( 100vw - 20em) / 40 ) ); } }
   @media (min-width: 60em) {
     h3 {
-      font-size: 1.99999em; } }
+      font-size: 2.49999em; } }
 
 h4 {
-  font-size: 1.125em; }
+  font-size: 1.25em; }
   @media (min-width: 20em) and (max-width: 60em) {
     h4 {
-      font-size: calc( 1.125em + 0.28921 * ( ( 100vw - 20em) / 40 ) ); } }
+      font-size: calc( 1.25em + 0.51776 * ( ( 100vw - 20em) / 40 ) ); } }
   @media (min-width: 60em) {
     h4 {
-      font-size: 1.41421em; } }
+      font-size: 1.76776em; } }
 
 a {
   color: black;
@@ -667,21 +667,21 @@ blockquote {
   border-left: 0.25em solid #ffcc66;
   font-style: italic;
   margin: 0;
-  margin-top: 1.40625em;
-  margin-bottom: 1.40625em;
+  margin-top: 1.42383em;
+  margin-bottom: 1.42383em;
   padding: 1.11111em; }
   @media (min-width: 20em) and (max-width: 60em) {
     blockquote {
-      margin-top: calc( 1.40625em + 1.09374 * ( ( 100vw - 20em) / 40 ) ); } }
+      margin-top: calc( 1.42383em + 1.40458 * ( ( 100vw - 20em) / 40 ) ); } }
   @media (min-width: 60em) {
     blockquote {
-      margin-top: 2.49999em; } }
+      margin-top: 2.82841em; } }
   @media (min-width: 20em) and (max-width: 60em) {
     blockquote {
-      margin-bottom: calc( 1.40625em + 1.09374 * ( ( 100vw - 20em) / 40 ) ); } }
+      margin-bottom: calc( 1.42383em + 1.40458 * ( ( 100vw - 20em) / 40 ) ); } }
   @media (min-width: 60em) {
     blockquote {
-      margin-bottom: 2.49999em; } }
+      margin-bottom: 2.82841em; } }
   @media (min-width: 20em) and (max-width: 60em) {
     blockquote {
       padding: calc( 1.11111em + 0.13889 * ( ( 100vw - 20em) / 40 ) ); } }

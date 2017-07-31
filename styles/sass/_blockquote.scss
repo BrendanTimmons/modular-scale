@@ -3,8 +3,8 @@ blockquote{
   font-style: italic;
   margin: 0;
 
-  @include ms-respond(margin-top,5);
-  @include ms-respond(margin-bottom,5);
+  @include ms-respond(margin-top,6);
+  @include ms-respond(margin-bottom,6);
   @include ms-respond(padding,1);
 }
 .quote{
