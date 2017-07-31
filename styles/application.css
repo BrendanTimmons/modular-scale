@@ -465,7 +465,8 @@ article header {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 500px;
+  height: 61.8vh;
   justify-content: flex-end;
   padding-top: 1px;
   position: relative;
