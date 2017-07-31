@@ -525,10 +525,10 @@ article header {
       font-size: calc( 1em + 0 * ( ( 100vw - 20em) / 40 ) ); } }
   @media (min-width: 60em) and (max-width: 75em) {
     .byline {
-      font-size: calc( 1em + 0 * ( ( 100vw - 60em) / 15 ) ); } }
+      font-size: calc( 1em + 0.125 * ( ( 100vw - 60em) / 15 ) ); } }
   @media (min-width: 75em) {
     .byline {
-      font-size: 1em; } }
+      font-size: 1.125em; } }
 
 article .content {
   box-sizing: border-box;
@@ -613,19 +613,19 @@ article .content {
         margin-top: calc( 1.125em + 0.28921 * ( ( 100vw - 20em) / 40 ) ); } }
     @media (min-width: 60em) and (max-width: 75em) {
       article .content p {
-        margin-top: calc( 1.41421em + 0 * ( ( 100vw - 60em) / 15 ) ); } }
+        margin-top: calc( 1.41421em + 0.17678 * ( ( 100vw - 60em) / 15 ) ); } }
     @media (min-width: 75em) {
       article .content p {
-        margin-top: 1.41421em; } }
+        margin-top: 1.59099em; } }
     @media (min-width: 20em) and (max-width: 60em) {
       article .content p {
         margin-bottom: calc( 1.125em + 0.28921 * ( ( 100vw - 20em) / 40 ) ); } }
     @media (min-width: 60em) and (max-width: 75em) {
       article .content p {
-        margin-bottom: calc( 1.41421em + 0 * ( ( 100vw - 60em) / 15 ) ); } }
+        margin-bottom: calc( 1.41421em + 0.17678 * ( ( 100vw - 60em) / 15 ) ); } }
     @media (min-width: 75em) {
       article .content p {
-        margin-bottom: 1.41421em; } }
+        margin-bottom: 1.59099em; } }
     @media (min-width: 20em) and (max-width: 60em) {
       article .content p {
         line-height: calc( 1.11111em + 0.13889 * ( ( 100vw - 20em) / 40 ) ); } }
@@ -678,10 +678,10 @@ article .content {
         margin-bottom: calc( 1em + 0 * ( ( 100vw - 20em) / 40 ) ); } }
     @media (min-width: 60em) and (max-width: 75em) {
       article .content img {
-        margin-bottom: calc( 1em + 0 * ( ( 100vw - 60em) / 15 ) ); } }
+        margin-bottom: calc( 1em + 0.125 * ( ( 100vw - 60em) / 15 ) ); } }
     @media (min-width: 75em) {
       article .content img {
-        margin-bottom: 1em; } }
+        margin-bottom: 1.125em; } }
 
 @media (min-width: 32em) {
   article .content img.left {
@@ -704,10 +704,10 @@ article .content {
       margin-bottom: calc( 1em + 0 * ( ( 100vw - 20em) / 40 ) ); } }
   @media (min-width: 32em) and (min-width: 60em) and (max-width: 75em) {
     article .content img.left {
-      margin-bottom: calc( 1em + 0 * ( ( 100vw - 60em) / 15 ) ); } }
+      margin-bottom: calc( 1em + 0.125 * ( ( 100vw - 60em) / 15 ) ); } }
   @media (min-width: 32em) and (min-width: 75em) {
     article .content img.left {
-      margin-bottom: 1em; } }
+      margin-bottom: 1.125em; } }
 @media (min-width: 32em) {
   article .content img.right {
     float: right;
@@ -729,10 +729,10 @@ article .content {
       margin-bottom: calc( 1em + 0 * ( ( 100vw - 20em) / 40 ) ); } }
   @media (min-width: 32em) and (min-width: 60em) and (max-width: 75em) {
     article .content img.right {
-      margin-bottom: calc( 1em + 0 * ( ( 100vw - 60em) / 15 ) ); } }
+      margin-bottom: calc( 1em + 0.125 * ( ( 100vw - 60em) / 15 ) ); } }
   @media (min-width: 32em) and (min-width: 75em) {
     article .content img.right {
-      margin-bottom: 1em; } }
+      margin-bottom: 1.125em; } }
 
 @media (min-width: 75em) {
   article .content {
@@ -749,19 +749,19 @@ blockquote {
       margin-top: calc( 1.42383em + 1.40458 * ( ( 100vw - 20em) / 40 ) ); } }
   @media (min-width: 60em) and (max-width: 75em) {
     blockquote {
-      margin-top: calc( 2.82841em + 0 * ( ( 100vw - 60em) / 15 ) ); } }
+      margin-top: calc( 2.82841em + 0.35355 * ( ( 100vw - 60em) / 15 ) ); } }
   @media (min-width: 75em) {
     blockquote {
-      margin-top: 2.82841em; } }
+      margin-top: 3.18196em; } }
   @media (min-width: 20em) and (max-width: 60em) {
     blockquote {
       margin-bottom: calc( 1.42383em + 1.40458 * ( ( 100vw - 20em) / 40 ) ); } }
   @media (min-width: 60em) and (max-width: 75em) {
     blockquote {
-      margin-bottom: calc( 2.82841em + 0 * ( ( 100vw - 60em) / 15 ) ); } }
+      margin-bottom: calc( 2.82841em + 0.35355 * ( ( 100vw - 60em) / 15 ) ); } }
   @media (min-width: 75em) {
     blockquote {
-      margin-bottom: 2.82841em; } }
+      margin-bottom: 3.18196em; } }
   @media (min-width: 20em) and (max-width: 60em) {
     blockquote {
       padding: calc( 1.11111em + 0.13889 * ( ( 100vw - 20em) / 40 ) ); } }
@@ -781,10 +781,10 @@ blockquote {
       font-size: calc( 1.125em + 0.28921 * ( ( 100vw - 20em) / 40 ) ); } }
   @media (min-width: 60em) and (max-width: 75em) {
     .quote {
-      font-size: calc( 1.41421em + 0 * ( ( 100vw - 60em) / 15 ) ); } }
+      font-size: calc( 1.41421em + 0.17678 * ( ( 100vw - 60em) / 15 ) ); } }
   @media (min-width: 75em) {
     .quote {
-      font-size: 1.41421em; } }
+      font-size: 1.59099em; } }
   @media (min-width: 20em) and (max-width: 60em) {
     .quote {
       line-height: calc( 1.11111em + 0.13889 * ( ( 100vw - 20em) / 40 ) ); } }
@@ -804,10 +804,10 @@ cite {
       font-size: calc( 1em + 0 * ( ( 100vw - 20em) / 40 ) ); } }
   @media (min-width: 60em) and (max-width: 75em) {
     cite {
-      font-size: calc( 1em + 0 * ( ( 100vw - 60em) / 15 ) ); } }
+      font-size: calc( 1em + 0.125 * ( ( 100vw - 60em) / 15 ) ); } }
   @media (min-width: 75em) {
     cite {
-      font-size: 1em; } }
+      font-size: 1.125em; } }
 
 @media (min-width: 60em) {
   blockquote {
@@ -854,10 +854,10 @@ cite {
       font-size: calc( 0.88889em + -0.18178 * ( ( 100vw - 20em) / 40 ) ); } }
   @media (min-width: 60em) and (max-width: 75em) {
     .compare-scale__size {
-      font-size: calc( 0.70711em + 0 * ( ( 100vw - 60em) / 15 ) ); } }
+      font-size: calc( 0.70711em + 0.08839 * ( ( 100vw - 60em) / 15 ) ); } }
   @media (min-width: 75em) {
     .compare-scale__size {
-      font-size: 0.70711em; } }
+      font-size: 0.7955em; } }
   @media (min-width: 20em) and (max-width: 60em) {
     .compare-scale__size {
       padding-top: calc( 0.98765em + -0.10377 * ( ( 100vw - 20em) / 40 ) ); } }
@@ -888,10 +888,10 @@ cite {
         height: calc( 1em + 0 * ( ( 100vw - 20em) / 40 ) ); } }
     @media (min-width: 60em) and (max-width: 75em) {
       .compare-scale__size:before {
-        height: calc( 1em + 0 * ( ( 100vw - 60em) / 15 ) ); } }
+        height: calc( 1em + 0.125 * ( ( 100vw - 60em) / 15 ) ); } }
     @media (min-width: 75em) {
       .compare-scale__size:before {
-        height: 1em; } }
+        height: 1.125em; } }
 
 .compare-scale__text {
   line-height: 0.33em; }
