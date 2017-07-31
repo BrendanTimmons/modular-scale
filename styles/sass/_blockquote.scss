@@ -1,16 +1,26 @@
 blockquote{
-  border-left: ms(-6) solid $yellow;
-  margin: ms(4) 0;
-  padding: ms(0);
+  border-left: 0.25em solid $yellow;
   font-style: italic;
+  margin: 0;
+
+  @include ms-respond(margin-top,5);
+  @include ms-respond(margin-bottom,5);
+  @include ms-respond(padding,1);
 }
 .quote{
   display: block;
-  font-size: ms(1);
-  line-height: ms(0);
+  @include ms-respond(font-size,2);
+  @include ms-respond(line-height,1);
 }
 cite{
   display: block;
-  font-size: ms(-1);
   margin-top: ms(0);
+  @include ms-respond(font-size,0);
+}
+
+
+@media (min-width: 60em){
+  blockquote{
+    border-width: 0.5em;
+  }
 }

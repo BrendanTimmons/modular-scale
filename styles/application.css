@@ -391,26 +391,55 @@ template {
   display: none; }
 
 body {
-  font-family: "Alegreya", Serif;
-  line-height: 1.41421em; }
+  font-family: "Alegreya", Serif; }
 
 h1, h2, h3, h4 {
   font-family: "Abril Fatface", Cursive;
   font-weight: normal;
   letter-spacing: 0.01em;
-  line-height: 1.25em; }
+  line-height: 1.11111em; }
+  @media (min-width: 20em) and (max-width: 60em) {
+    h1, h2, h3, h4 {
+      line-height: calc( 1.11111em + 0.13889 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    h1, h2, h3, h4 {
+      line-height: 1.25em; } }
 
 h1 {
-  font-size: 7.07098em; }
+  font-size: 1.80203em; }
+  @media (min-width: 20em) and (max-width: 60em) {
+    h1 {
+      font-size: calc( 1.80203em + 3.85475 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    h1 {
+      font-size: 5.65678em; } }
 
 h2 {
-  font-size: 3.53551em; }
+  font-size: 1.42383em; }
+  @media (min-width: 20em) and (max-width: 60em) {
+    h2 {
+      font-size: calc( 1.42383em + 1.40458 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    h2 {
+      font-size: 2.82841em; } }
 
 h3 {
-  font-size: 2.49999em; }
+  font-size: 1.26563em; }
+  @media (min-width: 20em) and (max-width: 60em) {
+    h3 {
+      font-size: calc( 1.26563em + 0.73436 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    h3 {
+      font-size: 1.99999em; } }
 
 h4 {
-  font-size: 1.76776em; }
+  font-size: 1.125em; }
+  @media (min-width: 20em) and (max-width: 60em) {
+    h4 {
+      font-size: calc( 1.125em + 0.28921 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    h4 {
+      font-size: 1.41421em; } }
 
 a {
   color: black;
@@ -418,11 +447,18 @@ a {
 
 body {
   background: #fbfbfb;
-  border-left: 1.76776em solid black; }
+  border: 0em solid black;
+  transition: 0.3s border ease-in-out; }
 
 ::selection {
   background: #ffcc66; }
 
+@media (min-width: 48em) {
+  body {
+    border-left: 1em solid black; } }
+@media (min-width: 60em) {
+  body {
+    border-left: 2em solid black; } }
 article header {
   align-items: flex-start;
   background: #ffcc66;
@@ -431,40 +467,136 @@ article header {
   flex-direction: column;
   height: 100vh;
   justify-content: flex-end;
-  padding: 1px 0 4.99995em 4.99995em;
-  position: relative; }
+  padding-top: 1px;
+  position: relative;
+  padding-left: 1.77979em;
+  padding-bottom: 1.77979em; }
+  @media (min-width: 20em) and (max-width: 60em) {
+    article header {
+      padding-left: calc( 1.77979em + 3.22016 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    article header {
+      padding-left: 4.99995em; } }
+  @media (min-width: 20em) and (max-width: 60em) {
+    article header {
+      padding-bottom: calc( 1.77979em + 3.22016 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    article header {
+      padding-bottom: 4.99995em; } }
   article header h1 {
-    margin: 1.25em 0 0.44195em; }
-  article header .byline {
-    font-size: 1em; }
+    margin-top: 1.11111em;
+    margin-bottom: 0.78037em; }
+    @media (min-width: 20em) and (max-width: 60em) {
+      article header h1 {
+        margin-top: calc( 1.11111em + 0.13889 * ( ( 100vw - 20em) / 40 ) ); } }
+    @media (min-width: 60em) {
+      article header h1 {
+        margin-top: 1.25em; } }
+    @media (min-width: 20em) and (max-width: 60em) {
+      article header h1 {
+        margin-bottom: calc( 0.78037em + -0.33842 * ( ( 100vw - 20em) / 40 ) ); } }
+    @media (min-width: 60em) {
+      article header h1 {
+        margin-bottom: 0.44195em; } }
 
 .byline {
-  font-style: italic; }
+  font-style: italic;
+  font-size: 1em; }
+  @media (min-width: 20em) and (max-width: 60em) {
+    .byline {
+      font-size: calc( 1em + 0 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    .byline {
+      font-size: 1em; } }
 
 article .content {
   box-sizing: border-box;
-  max-width: 31.99919em;
-  margin: 4.99995em 0 0 4.99995em;
-  padding-bottom: 4.99995em; }
+  max-width: 32em;
+  margin-left: 1.77979em;
+  margin-right: 1.77979em;
+  margin-top: 1.77979em;
+  padding-bottom: 1.77979em; }
+  @media (min-width: 20em) and (max-width: 60em) {
+    article .content {
+      margin-left: calc( 1.77979em + 3.22016 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    article .content {
+      margin-left: 4.99995em; } }
+  @media (min-width: 20em) and (max-width: 60em) {
+    article .content {
+      margin-right: calc( 1.77979em + 3.22016 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    article .content {
+      margin-right: 4.99995em; } }
+  @media (min-width: 20em) and (max-width: 60em) {
+    article .content {
+      margin-top: calc( 1.77979em + 3.22016 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    article .content {
+      margin-top: 4.99995em; } }
+  @media (min-width: 20em) and (max-width: 60em) {
+    article .content {
+      padding-bottom: calc( 1.77979em + 3.22016 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    article .content {
+      padding-bottom: 4.99995em; } }
   article .content h2, article .content h3, article .content h4 {
-    margin: 1.25em 0 0.625em; }
+    margin-top: 1.11111em;
+    margin-bottom: 0.87791em; }
+    @media (min-width: 20em) and (max-width: 60em) {
+      article .content h2, article .content h3, article .content h4 {
+        margin-top: calc( 1.11111em + 0.13889 * ( ( 100vw - 20em) / 40 ) ); } }
+    @media (min-width: 60em) {
+      article .content h2, article .content h3, article .content h4 {
+        margin-top: 1.25em; } }
+    @media (min-width: 20em) and (max-width: 60em) {
+      article .content h2, article .content h3, article .content h4 {
+        margin-bottom: calc( 0.87791em + -0.25291 * ( ( 100vw - 20em) / 40 ) ); } }
+    @media (min-width: 60em) {
+      article .content h2, article .content h3, article .content h4 {
+        margin-bottom: 0.625em; } }
   article .content p {
-    font-size: 1.25em;
-    line-height: 1.25em;
-    margin: 1.25em 0; }
+    font-size: 1.11111em;
+    margin-top: 1.125em;
+    margin-bottom: 1.125em;
+    line-height: 1.11111em; }
+    @media (min-width: 20em) and (max-width: 60em) {
+      article .content p {
+        font-size: calc( 1.11111em + 0.13889 * ( ( 100vw - 20em) / 40 ) ); } }
+    @media (min-width: 60em) {
+      article .content p {
+        font-size: 1.25em; } }
+    @media (min-width: 20em) and (max-width: 60em) {
+      article .content p {
+        margin-top: calc( 1.125em + 0.28921 * ( ( 100vw - 20em) / 40 ) ); } }
+    @media (min-width: 60em) {
+      article .content p {
+        margin-top: 1.41421em; } }
+    @media (min-width: 20em) and (max-width: 60em) {
+      article .content p {
+        margin-bottom: calc( 1.125em + 0.28921 * ( ( 100vw - 20em) / 40 ) ); } }
+    @media (min-width: 60em) {
+      article .content p {
+        margin-bottom: 1.41421em; } }
+    @media (min-width: 20em) and (max-width: 60em) {
+      article .content p {
+        line-height: calc( 1.11111em + 0.13889 * ( ( 100vw - 20em) / 40 ) ); } }
+    @media (min-width: 60em) {
+      article .content p {
+        line-height: 1.25em; } }
   article .content a {
-    padding: 0 0.5em;
+    padding: 0 0.70233em;
     position: relative; }
     article .content a:after {
       background-color: #ffcc66;
-      bottom: 0.0442em;
+      bottom: 2px;
       content: "";
       display: block;
       left: 0;
       position: absolute;
       right: 0;
+      top: 2px;
       transition: 0.3s left ease-in-out;
-      top: 0.15625em;
       z-index: -1; }
     article .content a:before {
       background: #000;
@@ -473,9 +605,9 @@ article .content {
       display: block;
       height: 1px;
       left: 0.5em;
+      position: absolute;
       right: auto;
       transition: 0.3s width ease-in-out;
-      position: absolute;
       width: 0;
       z-index: -1; }
     article .content a:hover:after {
@@ -483,53 +615,173 @@ article .content {
     article .content a:hover:before {
       width: calc(100% - 1em);
       transition-delay: 0.2s; }
-  article .content img.left {
-    float: left;
-    margin: 0 1.25em 1em 0; }
-  article .content img.right {
-    float: right;
-    margin: 0 0 1em 1.25em; }
+  article .content img {
+    display: block;
+    width: 100%;
+    transition: 0.3s width ease-in-out;
+    margin-bottom: 1em; }
+    @media (min-width: 20em) and (max-width: 60em) {
+      article .content img {
+        margin-bottom: calc( 1em + 0 * ( ( 100vw - 20em) / 40 ) ); } }
+    @media (min-width: 60em) {
+      article .content img {
+        margin-bottom: 1em; } }
+  @media (min-width: 32em) {
+    article .content img.left {
+      float: left;
+      width: 40%;
+      margin-right: 1.11111em;
+      margin-bottom: 1em; } }
+  @media (min-width: 32em) and (min-width: 20em) and (max-width: 60em) {
+    article .content img.left {
+      margin-right: calc( 1.11111em + 0.13889 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 32em) and (min-width: 60em) {
+    article .content img.left {
+      margin-right: 1.25em; } }
+  @media (min-width: 32em) and (min-width: 20em) and (max-width: 60em) {
+    article .content img.left {
+      margin-bottom: calc( 1em + 0 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 32em) and (min-width: 60em) {
+    article .content img.left {
+      margin-bottom: 1em; } }
+  @media (min-width: 32em) {
+    article .content img.right {
+      float: right;
+      width: 40%;
+      margin-left: 1.11111em;
+      margin-bottom: 1em; } }
+  @media (min-width: 32em) and (min-width: 20em) and (max-width: 60em) {
+    article .content img.right {
+      margin-left: calc( 1.11111em + 0.13889 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 32em) and (min-width: 60em) {
+    article .content img.right {
+      margin-left: 1.25em; } }
+  @media (min-width: 32em) and (min-width: 20em) and (max-width: 60em) {
+    article .content img.right {
+      margin-bottom: calc( 1em + 0 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 32em) and (min-width: 60em) {
+    article .content img.right {
+      margin-bottom: 1em; } }
 
 blockquote {
-  border-left: 0.44195em solid #ffcc66;
-  margin: 2.49999em 0;
-  padding: 1.25em;
-  font-style: italic; }
+  border-left: 0.25em solid #ffcc66;
+  font-style: italic;
+  margin: 0;
+  margin-top: 1.40625em;
+  margin-bottom: 1.40625em;
+  padding: 1.11111em; }
+  @media (min-width: 20em) and (max-width: 60em) {
+    blockquote {
+      margin-top: calc( 1.40625em + 1.09374 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    blockquote {
+      margin-top: 2.49999em; } }
+  @media (min-width: 20em) and (max-width: 60em) {
+    blockquote {
+      margin-bottom: calc( 1.40625em + 1.09374 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    blockquote {
+      margin-bottom: 2.49999em; } }
+  @media (min-width: 20em) and (max-width: 60em) {
+    blockquote {
+      padding: calc( 1.11111em + 0.13889 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    blockquote {
+      padding: 1.25em; } }
 
 .quote {
   display: block;
-  font-size: 1.41421em;
-  line-height: 1.25em; }
+  font-size: 1.125em;
+  line-height: 1.11111em; }
+  @media (min-width: 20em) and (max-width: 60em) {
+    .quote {
+      font-size: calc( 1.125em + 0.28921 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    .quote {
+      font-size: 1.41421em; } }
+  @media (min-width: 20em) and (max-width: 60em) {
+    .quote {
+      line-height: calc( 1.11111em + 0.13889 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    .quote {
+      line-height: 1.25em; } }
 
 cite {
   display: block;
-  font-size: 1em;
-  margin-top: 1.25em; }
+  margin-top: 1em;
+  font-size: 1em; }
+  @media (min-width: 20em) and (max-width: 60em) {
+    cite {
+      font-size: calc( 1em + 0 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    cite {
+      font-size: 1em; } }
 
+@media (min-width: 60em) {
+  blockquote {
+    border-width: 0.5em; } }
 .compare-scale {
   display: flex;
   justify-content: center;
-  margin: 2.49999em; }
+  margin: 1.40625em; }
+  @media (min-width: 20em) and (max-width: 60em) {
+    .compare-scale {
+      margin: calc( 1.40625em + 1.09374 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    .compare-scale {
+      margin: 2.49999em; } }
 
 .compare-scale__item {
   align-items: center;
+  border-top: 1px solid #000;
   display: flex;
   flex-direction: column;
-  padding: 0 0.88389em 27px 0;
-  border-top: 1px solid #000; }
+  padding-bottom: 27px;
+  padding-right: 0.98765em; }
+  @media (min-width: 20em) and (max-width: 60em) {
+    .compare-scale__item {
+      padding-right: calc( 0.98765em + -0.10377 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    .compare-scale__item {
+      padding-right: 0.88389em; } }
 
 .compare-scale__size {
   color: #f2777a;
-  font-size: 0.70711em;
-  padding: 1em 0;
-  position: relative; }
+  position: relative;
+  font-size: 0.88889em;
+  padding-top: 0.98765em;
+  padding-bottom: 0.98765em; }
+  @media (min-width: 20em) and (max-width: 60em) {
+    .compare-scale__size {
+      font-size: calc( 0.88889em + -0.18178 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    .compare-scale__size {
+      font-size: 0.70711em; } }
+  @media (min-width: 20em) and (max-width: 60em) {
+    .compare-scale__size {
+      padding-top: calc( 0.98765em + -0.10377 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    .compare-scale__size {
+      padding-top: 0.88389em; } }
+  @media (min-width: 20em) and (max-width: 60em) {
+    .compare-scale__size {
+      padding-bottom: calc( 0.98765em + -0.10377 * ( ( 100vw - 20em) / 40 ) ); } }
+  @media (min-width: 60em) {
+    .compare-scale__size {
+      padding-bottom: 0.88389em; } }
   .compare-scale__size:before {
     border-left: 1px solid #000;
     content: "";
-    height: 1em;
     left: 50%;
     position: absolute;
-    top: 0; }
+    top: 0;
+    height: 1em; }
+    @media (min-width: 20em) and (max-width: 60em) {
+      .compare-scale__size:before {
+        height: calc( 1em + 0 * ( ( 100vw - 20em) / 40 ) ); } }
+    @media (min-width: 60em) {
+      .compare-scale__size:before {
+        height: 1em; } }
 
 .compare-scale__text {
   line-height: 0.33em; }
@@ -541,11 +793,11 @@ cite {
 .select-type__item {
   display: flex;
   align-items: center;
-  margin-bottom: 0.3125em; }
+  margin-bottom: 0.6243em; }
 
 .select-type__size {
-  font-size: 0.70711em;
-  margin-right: 1.41421em;
+  font-size: 0.87791em;
+  margin-right: 1.11111em;
   color: #f2777a; }
 
 .select-type__text {

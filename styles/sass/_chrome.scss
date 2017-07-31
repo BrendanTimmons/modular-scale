@@ -1,7 +1,20 @@
 body{
   background: #fbfbfb;
-  border-left: ms(2) solid black;
+  border: 0em solid black;
+  transition: 0.3s border ease-in-out
 }
 ::selection{
   background: $yellow;
+}
+
+@media (min-width: 48em) {
+  body{
+    border-left: 1em solid black;
+  }
+}
+
+@media (min-width: 60em) {
+  body{
+    border-left: 2em solid black;
+  }
 }

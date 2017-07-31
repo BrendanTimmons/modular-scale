@@ -12,13 +12,21 @@ article header{
   flex-direction: column;
   height: 100vh;
   justify-content: flex-end;
-  padding: 1px 0 ms(8) ms(8);
+  padding-top: 1px;
   position: relative;
 
-  h1{ margin: ms(0) 0 ms(-6); }
-  .byline{font-size: ms(-1);}
+  @include ms-respond(padding-left,9);
+  @include ms-respond(padding-bottom,9);
+
+  h1{ 
+    @include ms-respond(margin-top,1);
+    @include ms-respond(margin-bottom,-5);
+  }
 }
-.byline{font-style: italic;}
+.byline{
+  font-style: italic;
+  @include ms-respond(font-size,0)
+}
 
 
 
@@ -26,31 +34,38 @@ article header{
 
 article .content{
   box-sizing: border-box;
-  max-width: ms(19);
-  margin: ms(8) 0 0 ms(8);
-  padding-bottom: ms(8);
+  max-width: 32em;
 
-  h2,h3,h4{margin: ms(0) 0 ms(-4);}
+  @include ms-respond(margin-left,9);
+  @include ms-respond(margin-right,9);
+  @include ms-respond(margin-top,9);
+  @include ms-respond(padding-bottom,9);
+
+  h2,h3,h4{
+    @include ms-respond(margin-top,1);
+    @include ms-respond(margin-bottom,-3);
+  }
   p{
-    font-size: ms(0);
-    line-height: ms(0);
-    margin: ms(0) 0;
+    @include ms-respond(font-size,1);
+    @include ms-respond(margin-top,2);
+    @include ms-respond(margin-bottom,2);
+    @include ms-respond(line-height,1);
   }
 
   a{
-    padding: 0 ms(-5);
+    padding: 0 ms(-6);
     position: relative;
 
     &:after{
       background-color: $yellow;
-      bottom: ms(-19);
+      bottom: 2px;
       content: "";
       display: block;
       left: 0;
       position: absolute;
       right: 0;
+      top: 2px;
       transition: 0.3s left ease-in-out;
-      top: ms(-12);
       z-index: -1;
     }
     &:before{
@@ -60,9 +75,9 @@ article .content{
       display: block;
       height: 1px;
       left: 0.5em;
+      position: absolute;
       right: auto;
       transition: 0.3s width ease-in-out;
-      position: absolute;
       width: 0;
       z-index: -1;
     }
@@ -74,16 +89,26 @@ article .content{
       }
     }
   }
-  img.left{
-    float: left;
-    margin: 0 ms(0) ms(-1) 0;
+
+  img{
+    display: block;
+    width: 100%;
+    transition: 0.3s width ease-in-out;
+    @include ms-respond(margin-bottom, 0);
   }
-  img.right{
-    float: right;
-    margin: 0 0 ms(-1) ms(0);
+
+  @media (min-width: 32em) {
+    img.left{
+      float: left;
+      width: 40%;
+      @include ms-respond(margin-right, 1);
+      @include ms-respond(margin-bottom, 0);
+    }
+    img.right{
+      float: right;
+      width: 40%;
+      @include ms-respond(margin-left, 1);
+      @include ms-respond(margin-bottom, 0);
+    }
   }
 }
-
-
-
-
