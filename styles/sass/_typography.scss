@@ -5,7 +5,11 @@ $modularscale: (
     ratio: $major-second,
   ),
   60em: (
-    ratio: $augmented-fourth
+    ratio: $augmented-fourth,
+  ),
+  75em: (
+    base: 1em 1.375em,
+    ratio: $fifth,
   )
 );
 
@@ -34,7 +38,8 @@ h1,h2,h3,h4{
   font-family: $abril;
   font-weight: normal;
   letter-spacing: 0.01em;
-  @include ms-respond(line-height,1);
+
+  line-height: 1.2;
 }
 h1{@include ms-respond(font-size,11);}
 h2{@include ms-respond(font-size,7);}

@@ -9,9 +9,8 @@ article header{
   background: $yellow;
   box-sizing: border-box;
   display: flex;
+  height: 100vh;
   flex-direction: column;
-  min-height: 500px;
-  height: 61.8vh;
   justify-content: flex-end;
   padding-top: 1px;
   position: relative;
@@ -30,12 +29,11 @@ article header{
 }
 
 
-
 // CONTENT
 
 article .content{
   box-sizing: border-box;
-  max-width: 32em;
+  max-width: 38em;
 
   @include ms-respond(margin-left,9);
   @include ms-respond(margin-right,9);
@@ -54,18 +52,19 @@ article .content{
   }
 
   a{
-    padding: 0 ms(-6);
+    padding: 0 0.2em; 
     position: relative;
+    word-wrap: nowrap;
 
     &:after{
       background-color: $yellow;
-      bottom: 2px;
+      bottom: 0.1em;
       content: "";
       display: block;
       left: 0;
       position: absolute;
       right: 0;
-      top: 2px;
+      top: 0.1em;
       transition: 0.3s left ease-in-out;
       z-index: -1;
     }
@@ -75,7 +74,7 @@ article .content{
       content: "";
       display: block;
       height: 1px;
-      left: 0.5em;
+      left: 0.2em;
       position: absolute;
       right: auto;
       transition: 0.3s width ease-in-out;
@@ -85,7 +84,7 @@ article .content{
     &:hover{
       &:after{left: 100%;}
       &:before{
-        width: calc(100% - 1em);
+        width: calc(100% - 0.4em);
         transition-delay: 0.2s;
       }
     }
@@ -93,23 +92,42 @@ article .content{
 
   img{
     display: block;
-    width: 100%;
-    transition: 0.3s width ease-in-out;
+    margin: 0 auto;
+    transition: 0.3s width ease-in-out, 0.3s margin ease-in-out;
+    width: 80%;
+
     @include ms-respond(margin-bottom, 0);
   }
 
-  @media (min-width: 32em) {
+}
+
+
+
+@media (min-width: 32em) {
+  article .content{
     img.left{
       float: left;
+      margin: 0;
       width: 40%;
-      @include ms-respond(margin-right, 1);
+
+      @include ms-respond(margin-right, 3);
       @include ms-respond(margin-bottom, 0);
     }
     img.right{
       float: right;
+      margin: 0;
       width: 40%;
-      @include ms-respond(margin-left, 1);
+
+      @include ms-respond(margin-left, 3);
       @include ms-respond(margin-bottom, 0);
     }
+  }
+}
+
+
+
+@media (min-width: 75em) {
+  article .content{
+    max-width: 42em;
   }
 }
